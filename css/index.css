@@ -1,0 +1,16 @@
+/*********\
+ * index *
+\*********/
+
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+
+html {
+	margin: 0;
+	font-family: 'Merienda', cursive;
+
+}
+
+button {
+	background: black;
+	color: white;
+}
