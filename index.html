@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +9,52 @@
 
 	<link rel="stylesheet" href="css/index.css">
 	<link rel="stylesheet" href="css/menu.css">
+
+	<script src="./src/rcpcd.js" type="module" defer onload="init()"></script>
+	<script src="./src/debugrender.js"></script>
+	<script>
+		// initialisation
+		function init() {
+
+			rcpcd.planter(function ({ gs, ev }) {
+				this.initServer([7, 7]);
+
+				gs.placeEntity(gs.createEntity("rook"), [0, 7]);
+				gs.placeEntity(gs.createEntity("rook"), [7, 7]);
+
+				gs.placeEntity(gs.createEntity("knight"), [1, 7]);
+				gs.placeEntity(gs.createEntity("knight"), [6, 7]);
+
+				gs.placeEntity(gs.createEntity("bishop"), [2, 7]);
+				gs.placeEntity(gs.createEntity("bishop"), [5, 7]);
+
+				gs.placeEntity(gs.createEntity("king"), [3, 7]);
+				gs.placeEntity(gs.createEntity("queen"), [4, 7]);
+
+				gs.placeEntity(gs.createEntity("pawn"), [0, 6]);
+				gs.placeEntity(gs.createEntity("pawn"), [1, 6]);
+				gs.placeEntity(gs.createEntity("pawn"), [2, 6]);
+				gs.placeEntity(gs.createEntity("pawn"), [3, 6]);
+				gs.placeEntity(gs.createEntity("pawn"), [4, 6]);
+				gs.placeEntity(gs.createEntity("pawn"), [5, 6]);
+				gs.placeEntity(gs.createEntity("pawn"), [6, 6]);
+				gs.placeEntity(gs.createEntity("pawn"), [7, 6]);
+			})
+
+			// renderer
+			debugrender();
+		};
+	</script>
+	<style>
+		html {
+			color: white;
+			background: black;
+			font-family: monospace;
+		}
+	</style>
 </head>
+
 <body>
-	
 </body>
+
 </html>
