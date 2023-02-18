@@ -1,4 +1,4 @@
-import { gamestate } from "./gamestate.m.js";
+import { gamestate } from "./gamestate2.m.js";
 import { events } from "./events.m.js";
 import sets from "./sets.m.js"
 

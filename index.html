@@ -19,26 +19,26 @@
 			rcpcd.planter(function ({ gs, ev }) {
 				this.initServer([7, 7]);
 
-				gs.placeEntity(gs.createEntity("rook"), [0, 7]);
-				gs.placeEntity(gs.createEntity("rook"), [7, 7]);
+				gs.placePiece(gs.createPiece("rook"), [0, 7]);
+				gs.placePiece(gs.createPiece("rook"), [7, 7]);
 
-				gs.placeEntity(gs.createEntity("knight"), [1, 7]);
-				gs.placeEntity(gs.createEntity("knight"), [6, 7]);
+				gs.placePiece(gs.createPiece("knight"), [1, 7]);
+				gs.placePiece(gs.createPiece("knight"), [6, 7]);
 
-				gs.placeEntity(gs.createEntity("bishop"), [2, 7]);
-				gs.placeEntity(gs.createEntity("bishop"), [5, 7]);
+				gs.placePiece(gs.createPiece("bishop"), [2, 7]);
+				gs.placePiece(gs.createPiece("bishop"), [5, 7]);
 
-				gs.placeEntity(gs.createEntity("king"), [3, 7]);
-				gs.placeEntity(gs.createEntity("queen"), [4, 7]);
+				gs.placePiece(gs.createPiece("king"), [3, 7]);
+				gs.placePiece(gs.createPiece("queen"), [4, 7]);
 
-				gs.placeEntity(gs.createEntity("pawn"), [0, 6]);
-				gs.placeEntity(gs.createEntity("pawn"), [1, 6]);
-				gs.placeEntity(gs.createEntity("pawn"), [2, 6]);
-				gs.placeEntity(gs.createEntity("pawn"), [3, 6]);
-				gs.placeEntity(gs.createEntity("pawn"), [4, 6]);
-				gs.placeEntity(gs.createEntity("pawn"), [5, 6]);
-				gs.placeEntity(gs.createEntity("pawn"), [6, 6]);
-				gs.placeEntity(gs.createEntity("pawn"), [7, 6]);
+				gs.placePiece(gs.createPiece("pawn"), [0, 6]);
+				gs.placePiece(gs.createPiece("pawn"), [1, 6]);
+				gs.placePiece(gs.createPiece("pawn"), [2, 6]);
+				gs.placePiece(gs.createPiece("pawn"), [3, 6]);
+				gs.placePiece(gs.createPiece("pawn"), [4, 6]);
+				gs.placePiece(gs.createPiece("pawn"), [5, 6]);
+				gs.placePiece(gs.createPiece("pawn"), [6, 6]);
+				gs.placePiece(gs.createPiece("pawn"), [7, 6]);
 			})
 
 			// renderer
@@ -50,6 +50,7 @@
 			color: white;
 			background: black;
 			font-family: monospace;
+			font-size: 6rem;
 		}
 	</style>
 </head>
